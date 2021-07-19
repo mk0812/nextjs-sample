@@ -1,4 +1,4 @@
 // @TODO: あとでけす
 export const square = (num: number) => {
-  return num * 2;
-};
+  return num * 2
+}
