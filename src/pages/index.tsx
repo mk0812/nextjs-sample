@@ -29,7 +29,7 @@ export default function Home() {
 
           <a href="https://nextjs.org/learn" className={styles.card}>
             <h2 className="text-gray-500">Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+            <p className="text-pink text-9xl">Learn about Next.js in an interactive course with quizzes!</p>
           </a>
 
           <a
