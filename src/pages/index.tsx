@@ -1,8 +1,8 @@
-import Link from "next/link";
-import { client } from "../libs/client";
+import Link from 'next/link'
+import { client } from '../libs/client'
 
 type Props = {
-  blog: { id: string, title: string }[]
+  blog: { id: string; title: string }[]
 }
 
 export default function Home({ blog }: Props) {
@@ -18,16 +18,16 @@ export default function Home({ blog }: Props) {
         ))}
       </ul>
     </div>
-  );
+  )
 }
 
 // データをテンプレートに受け渡す部分の処理を記述します
 export const getStaticProps = async () => {
-  const data = await client.get<{ contents: [] }>({ endpoint: "blog" });
+  const data = await client.get<{ contents: [] }>({ endpoint: 'blog' })
 
   return {
     props: {
       blog: data.contents,
     },
-  };
-};
+  }
+}

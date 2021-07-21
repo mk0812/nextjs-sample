@@ -1,6 +1,6 @@
-import { createClient } from 'microcms-js-sdk';
+import { createClient } from 'microcms-js-sdk'
 
 export const client = createClient({
   serviceDomain: 'gaknight',
   apiKey: process.env.API_KEY as string,
-});
+})

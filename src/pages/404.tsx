@@ -3,5 +3,5 @@ export default function notFound() {
     <main className="main">
       <p>ページがありません。</p>
     </main>
-  );
+  )
 }
