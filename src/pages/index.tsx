@@ -8,6 +8,7 @@ type Props = {
 export default function Home({ blog }: Props) {
   return (
     <div>
+      <h1>いえもんのてへぺろ日記</h1>
       <ul>
         {blog.map((blog) => (
           <li key={blog.id}>

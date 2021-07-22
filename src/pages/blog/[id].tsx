@@ -1,5 +1,6 @@
 import { client } from '../../libs/client'
 import { GetStaticPropsContext } from 'next'
+import Link from 'next/link'
 
 export default function BlogId({ blog }: any) {
   return (
@@ -11,6 +12,7 @@ export default function BlogId({ blog }: any) {
           __html: `${blog.body}`,
         }}
       />
+      <Link href="/">戻る</Link>
     </main>
   )
 }
