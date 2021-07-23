@@ -17,7 +17,7 @@ export const event = ({ action, category, label }: Event) => {
     return
   }
 
-  window.gtag('event', action, {
+  ;(window as any).gtag('event', action, {
     event_category: category,
     event_label: JSON.stringify(label),
   })
