@@ -6,7 +6,7 @@ export const existsGaId = GA_TRACKING_ID !== ''
 
 // PVを測定する
 export const pageView = (path: string) => {
-  window.gtag('config', GA_TRACKING_ID as string, {
+  ;(window as any).gtag('config', GA_TRACKING_ID as string, {
     page_path: path,
   })
 }
