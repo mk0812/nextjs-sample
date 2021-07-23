@@ -1,10 +1,12 @@
 import { client } from '../../libs/client'
 import { GetStaticPropsContext } from 'next'
+import { CommonMeta } from '../../components/Head'
 import Link from 'next/link'
 
 export default function BlogId({ blog }: any) {
   return (
     <main>
+      <CommonMeta title={blog.title} description={'ディスクリプションです'} />
       <h1>{blog.title}</h1>
       <p>{blog.publishedAt}</p>
       <div
